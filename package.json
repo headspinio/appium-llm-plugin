@@ -1,0 +1,55 @@
+{
+  "name": "appium-llm-plugin",
+  "description": "An Appium 2 plugin that uses LLMs to find elements",
+  "tags": [
+    "appium",
+    "unity"
+  ],
+  "version": "0.0.1",
+  "author": "Jonathan Lipps <jlipps@headspin.io>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/headspinio/appium-llm-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/headspinio/appium-llm-plugin/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8"
+  },
+  "appium": {
+    "pluginName": "llm",
+    "mainClass": "LLMPlugin"
+  },
+  "main": "./index.js",
+  "directories": {
+    "src": "./lib"
+  },
+  "files": [
+    "lib",
+    "index.js",
+    "!test",
+    "README",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rm -rf package-lock.json && rm -rf node_modules && npm install",
+    "test:unit": "mocha ./test/unit/**/*.test.js",
+    "test:e2e": "mocha ./test/e2e/**/*.test.js",
+    "test": "mocha ./test/**/*.test.js"
+  },
+  "devDependencies": {
+    "@appium/types": "^0.17.0",
+    "@types/lodash": "^4.17.4",
+    "@types/mocha": "^10.0.6",
+    "appium-uiautomator2-driver": "^3.5.2",
+    "expect": "^29.7.0",
+    "mocha": "^10.4.0",
+    "webdriverio": "^8.38.0"
+  },
+  "peerDependencies": {
+    "appium": "^2.5.0"
+  }
+}
