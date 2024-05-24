@@ -23,7 +23,7 @@
     "pluginName": "llm",
     "mainClass": "LLMPlugin"
   },
-  "main": "./index.js",
+  "main": "./index.mjs",
   "directories": {
     "src": "./lib"
   },
@@ -36,8 +36,8 @@
   ],
   "scripts": {
     "clean": "rm -rf package-lock.json && rm -rf node_modules && npm install",
-    "test:unit": "mocha ./test/unit/**/*.test.js",
-    "test:e2e": "mocha ./test/e2e/**/*.test.js",
+    "test:unit": "mocha ./test/unit/**/*.test.mjs",
+    "test:e2e": "mocha ./test/e2e/**/*.test.mjs",
     "test": "mocha ./test/**/*.test.js"
   },
   "devDependencies": {
