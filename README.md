@@ -19,10 +19,18 @@ provided of it.
 ### Requirements
 
 Along with a recent version of Appium 2 (the requirement for any plugin), you need to have
-a locally-hosted model running via [LM Studio](https://lmstudio.ai), or an OpenAI API key.
+a locally-hosted model running via [LM Studio](https://lmstudio.ai), or an OpenAI API key. Inside
+LM Studio you should download one or more LLMs to try. They are hosted on
+[huggingface](https://huggingface.co). You could start with [this
+one](https://huggingface.co/lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF), which seemed to work
+well for the XML-based query modes.
 
 Note that the `screenshot` query mode (see below) requires a model with a vision adapter for
-multimodal queries.
+multimodal queries. I couldn't find any open source models that did well with this mode, but [this
+one](https://huggingface.co/xtuner/llava-llama-3-8b-v1_1-gguf) seemed to do the least poiorly.
+
+You should probably also have an understanding of what LLMs are and how they work at a basic level,
+because sadly I'm not going to go into that here.
 
 ### Installation and activation
 
