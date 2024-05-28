@@ -29,9 +29,9 @@
   },
   "files": [
     "lib",
-    "index.js",
+    "index.mjs",
     "!test",
-    "README",
+    "README.md",
     "LICENSE"
   ],
   "scripts": {
