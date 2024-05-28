@@ -42,14 +42,20 @@
   },
   "devDependencies": {
     "@appium/types": "^0.17.0",
+    "@eslint/js": "^9.3.0",
     "@types/lodash": "^4.17.4",
     "@types/mocha": "^10.0.6",
     "appium-uiautomator2-driver": "^3.5.2",
+    "eslint": "^9.3.0",
     "expect": "^29.7.0",
     "mocha": "^10.4.0",
     "webdriverio": "^8.38.0"
   },
   "peerDependencies": {
     "appium": "^2.5.0"
+  },
+  "dependencies": {
+    "lru-cache": "^10.2.2",
+    "openai": "^4.47.1"
   }
 }
